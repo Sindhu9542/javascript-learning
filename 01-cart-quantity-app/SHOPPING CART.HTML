@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping cart</title>
+        <style>
+            button:hover{
+                background:#0056b3;
+            }
+            button{
+                background-color:rgb(99, 203, 9);
+                cursor:pointer;
+                color:white;
+                padding:15px;
+                font-size:medium;
+                border-radius:5px;
+                transition:0.5em;
+
+            }
+            .reset{
+                background:#dc3545;
+            }
+            .reset:hover{
+                background:#b02a37;
+            }
+            body{
+            background:#f4f4f4;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background:#fff;
+            padding:15px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            text-align:center;
+            width:350px;
+            height:450px;
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>🛒 Shopping Cart </h1>
+        <button onclick="console.log(`Quantity:${quantity}`);">Show Quantity</button>
+        <button onclick=
+        "quantity++;
+        console.log(`Quantity:${quantity}`);">Add to Cart</button>
+        <button onclick="
+        quantity+=2;
+        console.log(`Quantity:${quantity}`);
+        ">+2 Items</button>
+        <button onclick="
+        quantity=quantity+3;
+        console.log(`Quantity:${quantity}`);"
+        >+3 Items</button>
+        <button class="reset",onclick="quantity=0;
+        console.log(`Quantity:${quantity}`);">Reset</button>
+        </div>
+    </body>
+    <script>
+        let quantity=0;
+    </script>
+</html>
