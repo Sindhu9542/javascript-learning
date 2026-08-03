@@ -1,34 +1,40 @@
 # Rock Paper Scissors
 
-A simple JavaScript game where the user plays Rock, Paper, Scissors against the computer.
+A simple web-based Rock Paper Scissors game built using HTML and JavaScript. The player competes against the computer, which randomly selects Rock, Paper, or Scissors. The game then determines and displays the winner.
 
 ## Features
 
-* Play Rock, Paper, Scissors against a computer.
-* Computer choice is generated randomly.
-* Displays the winner after each round.
-* Uses JavaScript conditional statements to determine the result.
+* Play using Rock, Paper, or Scissors buttons.
+* Computer generates a random move.
+* Displays the player's choice and the computer's choice.
+* Determines the winner based on the game rules.
+* Shows the game result using JavaScript alerts.
 
 ## Technologies Used
 
 * HTML5
-* CSS3
-* JavaScript
+* JavaScript (ES6)
 
 ## Concepts Practiced
 
+* Functions
+* Function parameters
 * Variables
+* Conditional statements (`if...else`)
 * `Math.random()`
-* `if...else` statements
-* Comparison operators
-* Functions (if implemented)
 * Event handling (`onclick`)
-* Console output
+* String interpolation (Template Literals)
+
+## How to Run
+
+1. Clone or download this repository.
+2. Open the `index.html` file in a web browser.
+3. Click one of the buttons (Rock, Paper, or Scissors) to play against the computer.
 
 ## Future Improvements
 
-* Display the result on the webpage instead of the console.
-* Add a score counter.
-* Store the score using `localStorage`.
-* Improve the UI with icons and animations.
-* Add a "Reset Score" button.
+* Add CSS styling for a better user interface.
+* Display the result on the webpage instead of using alerts.
+* Keep track of wins, losses, and ties.
+* Save the score using `localStorage`.
+* Add a Reset Score button.
